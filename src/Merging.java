@@ -11,9 +11,15 @@ public class Merging {
 
     private static void mergeSort(int [] array){
 
-        int arrayLength = array.length;
+        int arrayLength = array.length;   
 
-        if (arrayLength < 2) {
+        /*
+The recursion “bottoms out” when the sequence to be sorted has length 1, in which
+case there is no work to be done, since every sequence of length 1 is already in
+sorted orde
+
+*/
+        if (arrayLength < 2) { 
             return;
         }
 
